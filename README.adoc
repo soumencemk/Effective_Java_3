@@ -1,0 +1,13 @@
+= Effective Java
+
+== Creating and Destroying Objects
+
+* Consider static factory methods instead of constructors
+* Consider a builder when faced with many constructor parameters
+* Enforce the singleton property with a private constructor or an enum type
+``` java
+public enum Elvis {
+INSTANCE;
+public void leaveTheBuilding() { ... }
+}
+```
